@@ -39,8 +39,8 @@ public class CombWithNextPermutationTest {
 
         // step1에서 꼭대기를 찾은 경우
         // step 2. i-1 위치값과 교환할 큰 값 찾기
-        int j = N;
-        while (numbers[i] >= numbers[j]) --j; // 꼭댁기의 크기보다 바로 전에 작은 값을 가진 위치 j를 찾는다.
+        int j = N - 1;
+        while (numbers[i - 1] >= numbers[j]) --j; // 꼭댁기의 크기보다 바로 전에 작은 값을 가진 위치 j를 찾는다.
         // 이때 j는 반드시 존재, 경계를 벗어나는 경우 없음
 
         // step 3. i-1위치값과 j위치값 교환
